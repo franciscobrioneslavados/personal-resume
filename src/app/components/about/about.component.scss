@@ -1,0 +1,18 @@
+.list-social-icons a {
+  color: #495057;
+}
+.list-social-icons a:hover {
+  color: #bd5d38;
+}
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+}
+
+.list-icons {
+  font-size: 3rem;
+}
+@media (min-width: 992px) {
+  .list-social-icons {
+    display: none;
+  }
+}

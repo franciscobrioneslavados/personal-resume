@@ -1,0 +1,43 @@
+.devicons {
+  font-size: 5rem;
+}
+
+.devicons:hover {
+  color: #6e74aa;
+}
+
+.list-inline-item:not(:last-child) {
+  margin: 1rem;
+}
+
+.inline-container {
+  display: inline-block;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(159, 168, 218, 0.5);
+  border-radius: 50%;
+}
+
+.inline-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  transform: translatey(-50%);
+  top: 50%;
+}

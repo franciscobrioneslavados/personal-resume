@@ -1,0 +1,66 @@
+@media (max-width: 992px) {
+  #sideNav {
+    background-color: rgb(159, 168, 218);
+  }
+  .navbar-brand-logo {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  .list-social-icons {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .list-social-icons a {
+    color: #495057;
+  }
+  .list-social-icons a:hover {
+    color: #bd5d38;
+  }
+  .navbar-brand-logo img {
+    display: none;
+  }
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+    background-color: rgba(159, 168, 218, 0.7);
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(110, 116, 170, 0.5);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
