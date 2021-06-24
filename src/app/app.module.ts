@@ -10,9 +10,10 @@ import { AppComponent } from './app.component';
 import { MAIN_COMPONENTS } from './components';
 
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, ...MAIN_COMPONENTS, SidebarComponent],
+  declarations: [AppComponent, ...MAIN_COMPONENTS, SidebarComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
