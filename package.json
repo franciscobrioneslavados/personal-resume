@@ -6,8 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:staged": "ng build --prod=true --outputPath=dist --baseHref=/personal-resume/",
-    "build:prod": "ng build --prod=true --outputPath=docs --baseHref=/personal-resume/",
+    "deploy": "ng deploy --base-href=/personal-resume/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
