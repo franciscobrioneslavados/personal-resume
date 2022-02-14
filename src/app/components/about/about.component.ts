@@ -26,13 +26,13 @@ export interface SocialInfo {
 })
 export class AboutComponent implements OnInit {
   public personalInfo: PersonalInformation = {
-    firstName: 'Gabriela',
-    lastName: 'Benejam',
+    firstName: 'Franacisco Briones',
+    lastName: 'Briones Lavados',
     address: {
-      city: 'Geneva',
-      state: 'Switzerland',
+      city: 'Santo Domingo',
+      state: 'V Region',
     },
-    email: 'gbenejamborras@gmail.com',
+    email: 'franciscobrioneslavados@gmail.com',
     description:
       'Full Stack developer. Currently working as a Senior Consultant developing web solutions with Adobe Experience Manager. Exploring different Web Technologies on my free time.',
     quote: 'Never stop learning; for when we stop learning, we stop growing.',

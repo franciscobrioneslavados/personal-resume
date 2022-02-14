@@ -9,11 +9,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MAIN_COMPONENTS } from './components';
 
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, ...MAIN_COMPONENTS, SidebarComponent, NotFoundComponent],
+  declarations: [AppComponent, ...MAIN_COMPONENTS, NavbarComponent, NotFoundComponent, NavbarComponent, ContactComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
