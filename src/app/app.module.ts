@@ -14,6 +14,7 @@ import { SharedModule } from './shared/shared.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { en_US, NZ_I18N, NzI18nModule } from 'ng-zorro-antd/i18n';
 import { SafePipe } from './pipes/safe.pipe';
+import { TemplateModule } from './shared/template/template.module';
 
 @NgModule({
   declarations: [SafePipe, AppComponent, NavbarComponent, ...MAIN_COMPONENTS],
@@ -24,6 +25,7 @@ import { SafePipe } from './pipes/safe.pipe';
     SharedModule,
     HttpClientModule,
     NoopAnimationsModule,
+    TemplateModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],

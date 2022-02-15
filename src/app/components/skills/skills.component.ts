@@ -73,10 +73,8 @@ export class SkillsComponent implements OnInit {
     {
       code: 'DE',
       arrange: '100%',
-    }
-  
-
-  ]
+    },
+  ];
 
   constructor() {}
 

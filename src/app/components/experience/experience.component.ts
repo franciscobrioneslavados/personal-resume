@@ -185,7 +185,8 @@ export class ExperienceComponent implements OnInit {
         },
         {
           name: 'Firebase',
-          imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+          imageUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
         },
         {
           name: 'GCP',
@@ -230,8 +231,9 @@ export class ExperienceComponent implements OnInit {
             'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
         },
         {
-          name: "PostgreSQL",
-          imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+          name: 'PostgreSQL',
+          imageUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
         },
         {
           name: 'GCP',
@@ -257,19 +259,23 @@ export class ExperienceComponent implements OnInit {
       techStack: [
         {
           name: 'Java',
-          imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+          imageUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
         },
         {
           name: 'AngularJS',
-          imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+          imageUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
         },
         {
           name: 'NodeJS',
-          imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+          imageUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
         },
         {
           name: 'AWS',
-          imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
+          imageUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
         },
       ],
     },
