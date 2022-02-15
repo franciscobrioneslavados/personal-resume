@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
   public navBarRoutes: any[] = [
     {
       name: 'About',
-      path: '/',
+      path: 'about',
     },
     {
       name: 'Education',

@@ -3,25 +3,29 @@ import { NgModule } from '@angular/core';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MAIN_COMPONENTS } from './components';
+import { HttpClientModule } from '@angular/common/http';
 
-import { NotFoundComponent } from './components/not-found/not-found.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { SharedModule } from './shared/shared.module';
+
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { en_US, NZ_I18N, NzI18nModule } from 'ng-zorro-antd/i18n';
+import { SafePipe } from './pipes/safe.pipe';
 
 @NgModule({
-  declarations: [AppComponent, ...MAIN_COMPONENTS, NavbarComponent, NotFoundComponent, NavbarComponent, ContactComponent],
+  declarations: [SafePipe, AppComponent, NavbarComponent, ...MAIN_COMPONENTS],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
     ScrollToModule.forRoot(),
+    SharedModule,
+    HttpClientModule,
+    NoopAnimationsModule,
   ],
-  providers: [],
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

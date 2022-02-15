@@ -1,15 +1,14 @@
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
   <div class="my-auto">
     <h2 class="primary-text mb-5">Skills</h2>
-
-    <div class="subheading mb-3">Programming Languages &amp; Tools</div>
     <ul class="list-inline">
-      <li class="list-inline-item" *ngFor="let icon of devicons">
+      <li class="list-inline-item" *ngFor="let icon of skills">
         <i
-          class="devicons {{ icon.icon }}"
-          placement="bottom"
-          ngbTooltip="{{ icon.name }}"
+          class="devicons {{ icon.icon }}"       
         ></i>
+        <div class="overlay">
+          <p class="text">100%</p>
+        </div>
       </li>
     </ul>
 
@@ -22,49 +21,14 @@
     </ul>
 
     <div class="subheading mb-3">Languages</div>
-    <ul class="fa-ul mb-0">
-      <li>
-        <div class="inline-container mr-3">
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <div class="inline-container" *ngFor="let len of language">
           <img
-            width="75px"
-            src="../../assets/images/icons/051-united-kingdom.svg"
-            alt=""
+            src="https://www.countryflagicons.com/FLAT/64/{{ len.code }}.png"
           />
           <div class="overlay">
-            <p class="text">100%</p>
-          </div>
-        </div>
-        <div class="inline-container mr-3">
-          <img
-            class="img-fluid"
-            width="75px"
-            src="../../assets/images/icons/017-spain.svg"
-            alt=""
-          />
-          <div class="overlay">
-            <p class="text">100%</p>
-          </div>
-        </div>
-        <div class="inline-container mr-3">
-          <img
-            class="img-fluid"
-            width="75px"
-            src="../../assets/images/icons/065-france.svg"
-            alt=""
-          />
-          <div class="overlay">
-            <p class="text">50%</p>
-          </div>
-        </div>
-        <div class="inline-container mr-3">
-          <img
-            class="img-fluid"
-            width="75px"
-            src="../../assets/images/icons/048-germany.svg"
-            alt=""
-          />
-          <div class="overlay">
-            <p class="text">15%</p>
+            <p class="text">{{ len.arrange }}</p>
           </div>
         </div>
       </li>

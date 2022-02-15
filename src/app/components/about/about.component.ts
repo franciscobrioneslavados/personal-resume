@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
     },
     email: 'franciscobrioneslavados@gmail.com',
     description:
-      'Full Stack developer. Currently working as a Senior Consultant developing web solutions with Adobe Experience Manager. Exploring different Web Technologies on my free time.',
+      'Ingeniero en Informática con amplia experiencia en desarrollo de software, en donde los últimos años me he especializado en desarrollo web con lenguajes de programación en JavaScript y Python, construyendo API REST, aplicaciones móviles y aplicaciones web con diferentes frameworks, Poseo Alta tolerancia al trabajo bajo presión y pro-activo y responsable.',
     quote: 'Never stop learning; for when we stop learning, we stop growing.',
   };
 

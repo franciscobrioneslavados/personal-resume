@@ -2,6 +2,27 @@
   <div class="my-auto">
     <h2 class="primary-text mb-5">Experience</h2>
 
+    <nz-collapse [nzBordered]="false">
+      <nz-collapse-panel
+        *ngFor="let experience of experienceData; let i = index"
+        nzHeader="{{ experience.title }} - {{ experience.company }}"
+        [nzActive]="i == 0 ? true : false"
+        nzExtra="{{ experience.startDate }} - {{ experience.endDate }}"
+      >
+        <p>Position: {{ experience.position }}</p>
+        <p>{{ experience.duties }}</p>
+        <ul class="list-inline">
+          <li
+            class="list-inline-item"
+            *ngFor="let stack of experience.techStack"
+          >
+            <img [src]="stack.imageUrl | safe: 'url'" />
+            <span class="span-stack">{{ stack.name }}</span>
+          </li>
+        </ul>
+      </nz-collapse-panel>
+    </nz-collapse>
+    <!--
     <div
       class="resume-item d-flex flex-column flex-md-row mb-5"
       *ngFor="let experience of experienceArr"
@@ -19,5 +40,6 @@
         >
       </div>
     </div>
+    -->
   </div>
 </section>

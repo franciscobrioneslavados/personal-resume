@@ -11,7 +11,7 @@ export interface Skills {
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
-  devicons: Skills[] = [
+  public skills: Skills[] = [
     {
       icon: 'devicon-java-plain colored',
       name: 'Java',
@@ -56,6 +56,27 @@ export class SkillsComponent implements OnInit {
     'Agile Development & Scrum',
     'Client oriented',
   ];
+
+  public language: any[] = [
+    {
+      code: 'US',
+      arrange: '100%',
+    },
+    {
+      code: 'ES',
+      arrange: '100%',
+    },
+    {
+      code: 'FR',
+      arrange: '100%',
+    },
+    {
+      code: 'DE',
+      arrange: '100%',
+    }
+  
+
+  ]
 
   constructor() {}
 

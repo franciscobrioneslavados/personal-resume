@@ -19,14 +19,14 @@ export interface EducationData {
 export class EducationComponent implements OnInit {
   public educationArr: EducationData[] = [
     {
-      school: 'Universitat Oberta de Catalunya',
-      url: 'https://www.uoc.edu/',
-      degree: 'Bachelor of Science',
-      department: 'Software Engineering - Minor in Data Science',
-      startDate: 'September 2016',
-      endDate: 'June 2021',
+      school: 'Instituto Profesional CIISA',
+      url: 'https://ciisa.cl/',
+      degree: 'Ingeneria en Informatica',
+      department: 'Ingeniería en Informática',
+      startDate: 'Marzo 2016',
+      endDate: 'Septiembre 2021',
       icon: 'fa-code',
-      status: 'In Progress',
+      status: 'Finish',
     },
     {
       school: 'Universitat de Barcelona',

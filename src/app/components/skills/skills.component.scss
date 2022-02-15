@@ -1,5 +1,5 @@
 .devicons {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .devicons:hover {
@@ -13,6 +13,7 @@
 .inline-container {
   display: inline-block;
   position: relative;
+  margin: 20px;
 }
 
 .overlay {
@@ -25,7 +26,6 @@
   opacity: 0;
   transition: 0.5s ease;
   background-color: rgb(159, 168, 218, 0.5);
-  border-radius: 50%;
 }
 
 .inline-container:hover .overlay {
