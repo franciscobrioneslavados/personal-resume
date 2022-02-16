@@ -21,10 +21,11 @@ export class SkillsComponent implements OnInit {
   public skills: Skills[] = [
     {
       name: 'Programming languages',
-      key: 'programming_languages', 
+      key: 'programming_languages',
       child: [
         {
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
           name: 'JavaScript',
           percent: 80,
         },
@@ -34,20 +35,22 @@ export class SkillsComponent implements OnInit {
           percent: 80,
         },
         {
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg',
           name: 'GO',
           percent: 30,
-        }, 
+        },
         {
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
           name: 'Python',
           percent: 40,
-        }
-      ]
-    }, 
+        },
+      ],
+    },
     {
       name: 'Frameworks',
-      key: 'frameworks', 
+      key: 'frameworks',
       child: [
         {
           imgUrl:
@@ -74,11 +77,12 @@ export class SkillsComponent implements OnInit {
           percent: 80,
         },
         {
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
           name: 'Flask',
           percent: 30,
-        }
-      ]
+        },
+      ],
     },
     {
       name: 'Cloud',
@@ -103,9 +107,10 @@ export class SkillsComponent implements OnInit {
           percent: 60,
         },
         {
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg',
           name: 'DigitalOcean',
-          percent: 70
+          percent: 70,
         },
         {
           imgUrl:
@@ -119,7 +124,7 @@ export class SkillsComponent implements OnInit {
           name: 'Kubernetes',
           percent: 80,
         },
-      ]
+      ],
     },
     {
       name: 'Data Bases',
@@ -139,11 +144,12 @@ export class SkillsComponent implements OnInit {
         },
         {
           name: 'MongoDB',
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
           percent: 70,
-        }
-      ]
-    }, 
+        },
+      ],
+    },
     {
       name: 'CICD',
       key: 'cicd',
@@ -153,36 +159,45 @@ export class SkillsComponent implements OnInit {
             'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg',
           name: 'GitLab',
           percent: 80,
-        }, 
+        },
         {
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
           name: 'Github',
           percent: 90,
         },
         {
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg',
           name: 'Bitbucket',
-          percent: 40
+          percent: 40,
         },
         {
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-line.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-line.svg',
           name: 'Jenkins',
           percent: 30,
-        }, 
+        },
         {
-          imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/circleci/circleci-plain.svg',
+          imgUrl:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/circleci/circleci-plain.svg',
           name: 'CircleCI',
           percent: 10,
-        }
-      ]
-    }
-   
+        },
+      ],
+    },
   ];
 
-  public lenguages = this.skills.filter((values) => values.key === 'programming_languages')[0];
-  public dataBases = this.skills.filter((values) => values.key === 'data-base')[0];
+  public lenguages = this.skills.filter(
+    (values) => values.key === 'programming_languages'
+  )[0];
+  public dataBases = this.skills.filter(
+    (values) => values.key === 'data-base'
+  )[0];
   public cicd = this.skills.filter((values) => values.key === 'cicd')[0];
-  public frameworks = this.skills.filter((values) => values.key === 'frameworks')[0];
+  public frameworks = this.skills.filter(
+    (values) => values.key === 'frameworks'
+  )[0];
   public cloud = this.skills.filter((values) => values.key === 'cloud')[0];
 
   skillArr: Array<string> = [
@@ -197,11 +212,9 @@ export class SkillsComponent implements OnInit {
       code: 'US',
       arrange: '70%',
     },
-    
   ];
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }
