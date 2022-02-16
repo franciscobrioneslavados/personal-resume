@@ -63,6 +63,10 @@ export class ExperienceComponent implements OnInit {
           imageUrl:
             'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg',
         },
+        {
+          imageUrl: 'assets/images/icons/terraform.png',
+          name: 'Terraform',
+        },
       ],
     },
     {
