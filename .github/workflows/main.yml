@@ -40,11 +40,11 @@ jobs:
         run: |
           npm run build -- --prod
       - name: Lint
-        allow-failure: true
+        continue-on-error: true
         run: |
           npm run lint
       - name: Test
-        allow-failure: true
+        continue-on-error: true
         run: |
           npm run test -- --prod
       - name: Conventional Changelog Action
