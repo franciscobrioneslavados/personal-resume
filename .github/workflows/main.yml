@@ -38,8 +38,8 @@ jobs:
           npm ci
       - name: Generate ENV File to PROD
         run: |
-          echo ${{ secrets.FIREBASE_CONFIG }}
-          echo ${{ secrets.FIREBASE_CONFIG }} > src/environments/environment.prod.ts
+          echo ${{ secrets.PROD_ENV }}
+          echo ${{ secrets.PROD_ENV }} > src/environments/environment.prod.ts
       - name: Build
         run: |
           npm run build -- --prod
