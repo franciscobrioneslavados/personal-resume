@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AboutService } from 'src/app/shared/services/about/about.service';
 
 export interface PersonalInformation {
   firstName: string;
@@ -57,7 +58,13 @@ export class AboutComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(
+    private aboutService: AboutService,
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.aboutService.getAboutList().subscribe(response => {
+      console.log(response);
+    })
+  }
 }

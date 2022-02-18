@@ -15,6 +15,11 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { en_US, NZ_I18N, NzI18nModule } from 'ng-zorro-antd/i18n';
 import { SafePipe } from './pipes/safe.pipe';
 import { TemplateModule } from './shared/template/template.module';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AboutService } from './shared/services/about/about.service';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [SafePipe, AppComponent, NavbarComponent, ...MAIN_COMPONENTS],
@@ -26,8 +31,11 @@ import { TemplateModule } from './shared/template/template.module';
     HttpClientModule,
     NoopAnimationsModule,
     TemplateModule,
+    AngularFireModule.initializeApp(environment.firebase_config),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [{ provide: NZ_I18N, useValue: en_US }, AboutService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
