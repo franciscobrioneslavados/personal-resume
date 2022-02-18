@@ -36,6 +36,10 @@ jobs:
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: |
           npm ci
+      - name: Generate ENV File to PROD
+        run: |
+          echo ${{ secrets.FIREBASE_CONFIG }}
+          echo ${{ secrets.FIREBASE_CONFIG }} > src/environments/environment.prod.ts
       - name: Build
         run: |
           npm run build -- --prod

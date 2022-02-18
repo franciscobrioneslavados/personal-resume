@@ -13,11 +13,12 @@
     "target": "es2015",
     "lib": [
       "es2018",
-      "dom"
-    ]
+      "dom",
+    ],
+    "types": ["node"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
 }
